@@ -14,30 +14,34 @@ The editor window can be found at __Window > Audio > Synthesizer__.
 #### API
 Generate a random AudioClip:
 ```c#
-AudioClip clip = Wikman.Synthesizer.Synth.GenerateRandom();
+ClipData clipData =  Wikman.Synthesizer.Synth.GenerateRandom();
+AudioClip clip = clipData.clip;
 ```
 
 Generate a random laser AudioClip:
 ```c#
-AudioClip clip = Wikman.Synthesizer.Synth.GenerateRandom(EffectType.Laser);
+ClipData clipData =  Wikman.Synthesizer.Synth.GenerateRandom(EffectType.Laser);
+AudioClip clip = clipData.clip;
 ```
 
 Generate a jump AudioClip using a seed:
 ```c#
 int seed = 12345;
-AudioClip clip = Wikman.Synthesizer.Synth.GenerateRandom(EffectType.Jump, seed);
+ClipData clipData =  Wikman.Synthesizer.Synth.GenerateRandom(EffectType.Jump, seed);
+AudioClip clip = clipData.clip;
 ```
 
 Generate a custom AudioClip:
 ```c#
 var parameters = new Wikman.Synthesizer.EffectParameters()
 {
-    WaveType = 8,
-    SustainTime = 0.3f,
-    StartFrequency = 0.7f,
-    Slide = -0.2f
+    waveType = 8,
+    sustainTime = 0.3f,
+    startFrequency = 0.7f,
+    slide = -0.2f
 };
-AudioClip clip = Wikman.Synthesizer.Synth.Generate(parameters);
+ClipData clipData = Wikman.Synthesizer.Synth.Generate(parameters);
+AudioClip clip = clipData.clip;
 ```
 
 ### How to get the package

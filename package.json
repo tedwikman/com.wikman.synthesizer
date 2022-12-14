@@ -1,0 +1,16 @@
+{
+    "name": "com.wikman.synthesizer", 
+    "version": "1.0.0", 
+    "unity": "2021.3", 
+    "displayName": "Synthesizer", 
+    "description": "An audio synthesizer built on Sfxr / Bfxr, packaged for Unity.", 
+    "keywords": [
+        "Audio", 
+        "Synthesizer"
+    ], 
+    "category": "Audio", 
+    "dependencies": {
+        "com.unity.modules.audio": "1.0.0"
+    }, 
+    "relatedPackages": {}
+}

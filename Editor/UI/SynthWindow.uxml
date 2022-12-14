@@ -1,0 +1,63 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Root">
+        <ui:VisualElement name="LeftColumn">
+            <ui:Label text="Generator" class="SubHeader" style="padding-bottom: 10px"/>
+            <ui:Button text="Pickup" name="Pickup" class="DefaultButton" />
+            <ui:Button text="Laser" name="Laser" class="DefaultButton" />
+            <ui:Button text="Explosion" name="Explosion" class="DefaultButton" />
+            <ui:Button text="Power up" name="Power up" class="DefaultButton" />
+            <ui:Button text="Hit" name="Hit" class="DefaultButton" />
+            <ui:Button text="Jump" name="Jump" class="DefaultButton" />
+            <ui:Button text="Blip" name="Blip" class="DefaultButton" />
+            <ui:Button text="Full Spectrum" name="Random" class="DefaultButton" />
+            <ui:Toggle label="Randomize" name="Randomize" value="false" />
+        </ui:VisualElement>
+        <ui:VisualElement name="MidColumn">
+            <ui:Label text="Current Sound" class="SubHeader" style="padding-bottom: 10px"/>
+            <ui:VisualElement class="ParameterGroup">
+                <ui:DropdownField name="WaveType" label="Wave Type" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ParameterGroup">
+                <ui:Slider name="AttackTime" label="Attack Time" value="0" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="SustainTime" label="Sustain Time" value="0.3" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="SustainPunch" label="Sustain Punch" value="0" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="DecayTime" label="Decay Time" value="0.4" low-value="0" high-value="1" show-input-field="true" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ParameterGroup">
+                <ui:Slider name="StartFrequency" label="Start Frequency" value="0.3" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="MinFrequency" label="Min Frequency" value="0" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="Slide" label="Slide" value="0" low-value="-1" high-value="1" show-input-field="true" />
+                <ui:Slider name="DeltaSlide" label="Delta Slide" value="0" low-value="-1" high-value="1" show-input-field="true" />
+                <ui:Slider name="VibratoDepth" label="Vibrato Depth" value="0" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="VibratoSpeed" label="Vibrato Speed" value="0" low-value="0" high-value="1" show-input-field="true" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ParameterGroup">
+                <ui:Slider name="ChangeAmount" label="Change Amount" value="0" low-value="-1" high-value="1" show-input-field="true" />
+                <ui:Slider name="ChangeSpeed" label="Change Speed" value="0" low-value="0" high-value="1" show-input-field="true" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ParameterGroup">
+                <ui:Slider name="SquareDuty" label="Square Duty" value="0" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="DutySweep" label="Duty Sweep" value="0" low-value="-1" high-value="1" show-input-field="true" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ParameterGroup">
+                <ui:Slider name="RepeatSpeed" label="Repeat Speed" value="0" low-value="0" high-value="1" show-input-field="true" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ParameterGroup">
+                <ui:Slider name="FlangerOffset" label="Flanger Offset" value="0" low-value="-1" high-value="1" show-input-field="true" />
+                <ui:Slider name="FlangerSweep" label="Flanger Sweep" value="0" low-value="-1" high-value="1" show-input-field="true" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ParameterGroup">
+                <ui:Slider name="LpFilterCutoff" label="LP Filter Cutoff" value="1" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="LpFilterCutoffSweep" label="LP Filter Cutoff Sweep" value="0" low-value="-1" high-value="1" show-input-field="true" />
+                <ui:Slider name="LpFilterResonance" label="LP Filter Resonance" value="0" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="HpFilterCutoff" label="HP Filter Cutoff" value="0" low-value="0" high-value="1" show-input-field="true" />
+                <ui:Slider name="HpFilterCutoffSweep" label="HP Filter Cutoff Sweep" value="0" low-value="-1" high-value="1" show-input-field="true" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightColumn">
+            <ui:Button text="Export Sound" name="ExportSound" class="DefaultButton" />
+            <ui:Button text="Print Data to Console" name="PrintToConsole" class="DefaultButton" />
+            <ui:Button text="Play Sound" name="PlaySound" class="DefaultButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

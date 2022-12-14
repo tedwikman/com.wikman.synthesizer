@@ -1,0 +1,48 @@
+.Header
+{
+    font-size: 21px;
+}
+
+.SubHeader
+{
+    font-size: 16px;
+}
+
+#Root
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    flex-direction: row;
+}
+
+#LeftColumn
+{
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+#MidColumn
+{
+    flex-grow: 1;
+    padding-left: 10px;
+    max-width: 500px;
+}
+
+#RightColumn
+{
+    flex-grow: 1;
+    padding-left: 10px;
+    flex-direction: column-reverse;
+}
+
+.ParameterGroup
+{
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 5px;
+}
+
+.DefaultButton
+{
+    height: 32px;
+}
